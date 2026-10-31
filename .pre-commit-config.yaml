@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+  # Local hooks use the versions installed from backend/pyproject.toml (run `make install` first).
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff check
+        entry: bash -c 'cd backend && ruff check --fix .'
+        language: system
+        types: [python]
+        pass_filenames: false
+      - id: ruff-format
+        name: ruff format
+        entry: bash -c 'cd backend && ruff format .'
+        language: system
+        types: [python]
+        pass_filenames: false
+      - id: mypy
+        name: mypy
+        entry: bash -c 'cd backend && mypy app tests'
+        language: system
+        types: [python]
+        pass_filenames: false

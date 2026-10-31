@@ -1,0 +1,182 @@
+{
+    "created": 1627939168,
+    "updated": 1793480495,
+    "created_date": "2021-08-02T21:19:28Z",
+    "updated_date": "2026-10-31T21:01:35Z",
+    "active": "1",
+    "index_name": "9ef84268-d588-465a-a308-a864a43d0070",
+    "org": [
+        "Ministry of Agriculture and Farmers Welfare",
+        "Department of Agriculture and Farmers Welfare"
+    ],
+    "org_type": "Central",
+    "source": "data.gov.in",
+    "title": "Current Daily Price of Various Commodities from Various Markets (Mandi)",
+    "external_ws_url": "",
+    "visualizable": "1",
+    "field": [
+        {
+            "name": "State",
+            "id": "state",
+            "type": "keyword"
+        },
+        {
+            "name": "District",
+            "id": "district",
+            "type": "keyword"
+        },
+        {
+            "name": "Market",
+            "id": "market",
+            "type": "keyword"
+        },
+        {
+            "name": "Commodity",
+            "id": "commodity",
+            "type": "keyword"
+        },
+        {
+            "name": "Variety",
+            "id": "variety",
+            "type": "keyword"
+        },
+        {
+            "name": "Grade",
+            "id": "grade",
+            "type": "keyword"
+        },
+        {
+            "name": "Arrival_Date",
+            "id": "arrival_date",
+            "type": "date"
+        },
+        {
+            "name": "Min_x0020_Price",
+            "id": "min_price",
+            "type": "double"
+        },
+        {
+            "name": "Max_x0020_Price",
+            "id": "max_price",
+            "type": "double"
+        },
+        {
+            "name": "Modal_x0020_Price",
+            "id": "modal_price",
+            "type": "double"
+        }
+    ],
+    "external_ws": 0,
+    "catalog_uuid": "6141ea17-a69d-4713-b600-0a43c8fd9a6c",
+    "sector": [
+        "Agriculture",
+        "Agricultural Marketing"
+    ],
+    "target_bucket": {
+        "field": "9ef84268-d588-465a-a308-a864a43d0070",
+        "index": "daily_mandi_price",
+        "type": "6141ea17-a69d-4713-b600-0a43c8fd9a6c"
+    },
+    "desc": "Current Daily Price of Various Commodities from Various Markets (Mandi)",
+    "field_exposed": [
+        {
+            "name": "State",
+            "id": "state.keyword",
+            "type": "keyword"
+        },
+        {
+            "name": "District",
+            "id": "district",
+            "type": "keyword"
+        },
+        {
+            "name": "Market",
+            "id": "market",
+            "type": "keyword"
+        },
+        {
+            "name": "Commodity",
+            "id": "commodity",
+            "type": "keyword"
+        },
+        {
+            "name": "Variety",
+            "id": "variety",
+            "type": "keyword"
+        },
+        {
+            "name": "Grade",
+            "id": "grade",
+            "type": "keyword"
+        }
+    ],
+    "message": "Resource lists",
+    "version": "2.2.0",
+    "status": "ok",
+    "total": 510,
+    "count": 5,
+    "limit": "5",
+    "offset": "0",
+    "records": [
+        {
+            "state": "Karnataka",
+            "district": "Shivamogga",
+            "market": "APMC THIRTHAHALLI",
+            "commodity": "Arecanut(Betelnut\/Supari)",
+            "variety": "Gorabalu",
+            "grade": "Local",
+            "arrival_date": "31\/10\/2026",
+            "min_price": 33011,
+            "max_price": 39699,
+            "modal_price": 37099
+        },
+        {
+            "state": "Karnataka",
+            "district": "Bengaluru",
+            "market": "Bengaluru APMC",
+            "commodity": "Sesamum(Sesame,Gingelly,Til)",
+            "variety": "White",
+            "grade": "FAQ",
+            "arrival_date": "31\/10\/2026",
+            "min_price": 16500,
+            "max_price": 18500,
+            "modal_price": 17500
+        },
+        {
+            "state": "Karnataka",
+            "district": "Bengaluru",
+            "market": "Bengaluru APMC",
+            "commodity": "Mustard",
+            "variety": "Other",
+            "grade": "FAQ",
+            "arrival_date": "31\/10\/2026",
+            "min_price": 10800,
+            "max_price": 14000,
+            "modal_price": 12400
+        },
+        {
+            "state": "Karnataka",
+            "district": "Bengaluru",
+            "market": "Bengaluru APMC",
+            "commodity": "Alasande Gram",
+            "variety": "Alasande Gram",
+            "grade": "Medium",
+            "arrival_date": "31\/10\/2026",
+            "min_price": 9500,
+            "max_price": 10500,
+            "modal_price": 10000
+        },
+        {
+            "state": "Karnataka",
+            "district": "Bengaluru",
+            "market": "Bengaluru APMC",
+            "commodity": "Potato",
+            "variety": "Local",
+            "grade": "Medium",
+            "arrival_date": "31\/10\/2026",
+            "min_price": 3200,
+            "max_price": 4600,
+            "modal_price": 4000
+        }
+    ]
+}

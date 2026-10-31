@@ -1,0 +1,12 @@
+# Knowledge-base sources. ONE real document per line; blank lines and # comments are ignored.
+#
+    C:\personal\icar_org.pdf | wheat | Wheat Package of Practices | Madhya Pradesh
+#
+# - Only official documents: ICAR institutes, state agricultural universities, KVKs.
+# - crop: lowercase crop name (wheat, rice, tomato...). Use "general" for multi-crop documents;
+#   they are also returned when a query filters on a specific crop.
+# - title/region are optional but improve citations and search. Titles cannot contain "|".
+# - Local path (e.g. C:\docs\file.pdf) works for PDFs you downloaded manually.
+#
+# This file intentionally ships with NO entries. Add yours, then run:
+#   python scripts/ingest_docs.py
