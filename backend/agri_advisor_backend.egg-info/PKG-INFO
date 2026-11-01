@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: agri-advisor-backend
+Version: 0.1.0
+Summary: Multilingual agritech advisory assistant - API
+Requires-Python: >=3.11
+Requires-Dist: fastapi>=0.110
+Requires-Dist: uvicorn[standard]>=0.29
+Requires-Dist: pydantic>=2.6
+Requires-Dist: pydantic-settings>=2.2
+Requires-Dist: sqlalchemy[asyncio]>=2.0
+Requires-Dist: alembic>=1.13
+Requires-Dist: psycopg[binary]>=3.1
+Requires-Dist: httpx>=0.27
+Requires-Dist: diskcache>=5.6
+Requires-Dist: tzdata>=2024.1
+Provides-Extra: rag
+Requires-Dist: pymupdf>=1.24; extra == "rag"
+Requires-Dist: chromadb>=0.5; extra == "rag"
+Requires-Dist: sentence-transformers>=3.0; extra == "rag"
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: ruff>=0.5; extra == "dev"
+Requires-Dist: mypy>=1.10; extra == "dev"
+Requires-Dist: pre-commit>=3.7; extra == "dev"
